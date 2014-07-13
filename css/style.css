@@ -1,161 +1,90 @@
-html{
-    height:100%;
-    padding:0px;
-    background-color:transparent;
-}
-body{
-    width:100%;
-    height:100%;
-    margin:0px;
-    background-color:transparent;
-}
-#spacer{
-    height:100%;
-    width:100%;
-    position:relative;
-    top:0;
-    left:0;
-    overflow:hidden;
-}
-#titleCanvas{
-    height:100%;
-    width:100%;
-    background-color:transparent;
-    position:absolute;
-    top:0px;
-    left:0px;
-    z-index:10;
-} 
-#layer0{
-    background-color:transparent;
-    width:100%;
-    height:100%;
-    position:absolute;
-    top:0px;
-    left:0px;
-    z-index:0;
-}
-#layer1{
-    background-color:transparent;
-    width:100%;
-    height:100%;
-    position:absolute;
-    top:0px;
-    left:0px;
-    z-index:1;
-}
-#layer2{
-    background-color:transparent;
-    width:100%;
-    height:100%;
-    position: absolute;
-    z-index:2;
-}
-#layer3{
-    background-color:transparent;
-    width:100%;
-    height:100%;
-    position: absolute;
-    z-index:3;
-}
-h1 {
+/*
+Theme Name: Tortoise Grid
+Theme URI: http://www.markcolling.com
+Description: Tortoise Grid WordPress theme
+Version: 1
+Author: Mark Colling
+Author URI: http://www.markcolling.com
+*/
+
+.navbar-brand {
     font-family: 'Nixie One', cursive;
-    text-align:center;
-    position:relative;
+}
+.navbar {
+    box-shadow: 0px 8px 5px #282828;
+}
+body {
+    min-height: 2000px;
+    padding-top: 60px;
+    background-color:rgb(77,78,79);
+    font-size:100%;
+}
+.container-fluid {
+    max-width: 1280px;
+}
+.main {
+    padding: 0px;
+}
+.outercell {
+    padding:0px;
+}
+.innercell {
+    background-color: white;
+    margin: 8px;
+    box-shadow: 8px 8px 5px #282828;
+}
+h3 {
+    font-family: 'Questrial', sans-serif;
+    font-size:2.5em;
+    padding:16px;
+    padding-bottom: 0px;
+    margin:0px;
+}
+h3 a:link, h3 a:hover, h3 a:visited, h3 a:active{
+    color:black;
+    text-decoration: none;
+}
+.subtitle {
+    font-family: 'Questrial', sans-serif;
+    font-size:1.5em;
+    margin:0px;
+    padding:16px;
+}
+.large .subtitle{
+    padding-top:8px;
+    padding-bottom: 8px;
+}
+
+.imagecontainer {
+    padding: 16px;
+    padding-top:0px;
+}
+.image {
+    background-image:url("../img/blog-example.jpg");
     width:100%;
-    z-index=10;
+    height:100px;
 }
-ul,li {
-    list-style-type: none; 
-    padding:0;
-    margin:0;
-    background-color:white;
-    z-index:15;
+.tagcontainer {
+    padding-left:16px;
+    padding-right:16px;
+    padding-bottom:16px;
 }
-#menu {
-    margin-top:2px;
+
+.tag {
+    display:inline-block;
+    border-radius:5px;
+    padding-top:3px;
+    padding-bottom:3px;
+    padding-left:6px;
+    padding-right:6px;
+    font-size: 1.5em;
 }
-.menuItem {
-    font-family: 'Questrial', sans-serif;
-    font-size:18px;
-    border:2px;
-    border-top-style:solid;
-    border-color:black;
-    border-bottom-style:solid;
-    border-color:black;
-    padding-top:10px;
-    padding-bottom:10px;
-    margin-top:-2px;
-    padding-left:10px;
-    cursor:pointer;
+#pink{
+    background-color: rgba(196,44,97,0.5);
+    color:rgb(196,44,97);
 }
-.menuBody {
-    font-family: 'Questrial', sans-serif;
-    font-size:14px;
-    text-align:justify;
-    padding-bottom:10px;
-    padding-left:15px;
-    padding-right:15px;
-    display:none;
+#blue{
+    background-color: rgba(0,36,131,0.5);
+    color:  rgb(0,36,131);
+}
     
-}
-li:last-child .menuBody{
-    border-bottom-style:solid;
-    border-color:black;
-}
-
-
-@media (min-width: 300px) {
-    h1 { 
-        margin-top: -25px; 
-        font-size: 50px;     
-    }
-    #layer0 {
-        background: url('../img/ribbon_v1_mobile.png');
-    }
-    #layer1 {
-        background: url('../img/ribbon_v2_mobile.png');
-    }
-    #layer2 {
-        background: url('../img/ribbon_v3_mobile.png') bottom;
-    }
-    #layer3 {
-        background: url('../img/ribbon_v4_mobile.png') bottom;
-    }
-}
-
-@media (min-width: 410px) {
-
-    h1 { 
-        margin-top: -32.5px;
-        font-size: 65px;
-    }
-    #layer0 {
-        background: url('../img/ribbon_v1.png');
-    }
-    #layer1 {
-        background: url('../img/ribbon_v2.png');
-    }
-    #layer2 {
-        background: url('../img/ribbon_v3.png') bottom;
-    }
-    #layer3 {
-        background: url('../img/ribbon_v4.png') bottom;
-    }
-}
-
-@media (min-width: 700px) {
-    
-    h1 { 
-        margin-top: -35px;
-        font-size: 70px;
-    }
-}
-
-@media (min-width: 1200px) {
-    
-    h1 { 
-        margin-top: -37.5px;
-        font-size: 75px;
-    }
-}
